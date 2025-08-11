@@ -1,0 +1,38 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{texsx}[1][]
+{
+}
+\defbeamertemplate*{navigation symbols}{fiap}{}
+
+\defbeamertemplate*{headline}{fiap}{
+    \begingroup
+    \begin{beamercolorbox}[right, sep=5pt]{default}
+    \ifnum\thepage>1\relax
+        \includegraphics[width=0.05\paperwidth]{assets/logo_pink}
+    \fi
+    \end{beamercolorbox}
+    \endgroup
+}
+
+\defbeamertemplate*{footline}{fiap}{
+    \begingroup
+    \begin{beamercolorbox}[right, sep=5pt]{default}
+    \ifnum\thepage>1\relax
+        \thepage
+    \fi
+    \end{beamercolorbox}
+    \endgroup
+}
+
+\defbeamertemplate*{frametitle}{fiap}[1][left]
+{
+    \begingroup
+        \begin{beamercolorbox}[sep=20pt, wd=\paperwidth]{frametitle}
+            \usebeamerfont{frametitle}\insertframetitle\par    
+        \end{beamercolorbox}
+    \endgroup
+}
+
+\mode<all>
