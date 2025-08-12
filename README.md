@@ -25,21 +25,26 @@ Para uso básico:
 1. Clone o repositório.
 2. Execute o script de instalação:
 
-```bash sudo python3 install.py ```
+```bash
+sudo python3 install.py
+```
 
 Esse script irá copiar os arquivos necessários para a pasta `beamer` da sua
 distribuição LaTeX.
 
 3. Atualize o **filename database** do LaTeX:
 
-```bash sudo texhash ```
+```bash
+sudo texhash
+```
 
-4. Use o arquivo `exemplo.md` como base para criar sua apresentação.
+4. Use o arquivo `apresentacao.md` como base para criar sua apresentação.
 
 ## Gerando o PDF
 
 Para gerar o PDF a partir do Markdown:
 
-```bash pandoc -t beamer apresentacao.md -o apresentacao.pdf --defaults
-defaults.yaml ```
+``` bash
+pandoc -t beamer apresentacao.md -o apresentacao.pdf --defaults defaults.yaml
+```
 
