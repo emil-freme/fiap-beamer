@@ -36,15 +36,10 @@
 
 \begingroup
 \begin{tikzpicture}[overlay, remember picture]
-    \draw[fill=fiapDarkGrey] (-1in,-\paperheight) rectangle
-(\paperwidth,\paperheight);
-\end{tikzpicture}
-    \begin{beamercolorbox}[wd=\paperwidth, sep=12pt, center]{section title}
-    
-    \usebeamerfont{frametitle}\insertsection\par
-    
-    \end{beamercolorbox}
-\begin{tikzpicture}[overlay, remember picture]
+    \draw[fill=fiapDarkGrey] (-1in,-\paperheight) rectangle (\paperwidth,\paperheight);
+    \draw[fill=fiapPink] (-1in, -\paperheight) rectangle (-0.3in, \paperheight);
+    \node[anchor=north west, text width=0.7\textwidth] at (-0.2in, 1.1in) {
+        \usebeamercolor[fg]{title}\usebeamerfont{title}\insertsection\par };
 \end{tikzpicture}
 \endgroup
 }

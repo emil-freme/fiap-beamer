@@ -5,6 +5,7 @@ author: Pedro Freme \<email@email.com\>
 institute: 2022 - FIAP
 date: 22/02/2022
 theme: fiap
+template: fiapPandocBeamer
 aspectratio: 169
 ...
 
@@ -21,6 +22,8 @@ The Imitation Game: "Can machines think?"
 \begin{center}
 \includegraphics[width=0.7\textwidth]{figuras/dartmouth.png}
 \end{center}
+
+# Lorem ipsum dolor sit amet consectur
 
 ## Slide com código, inclusive LaTeX
 

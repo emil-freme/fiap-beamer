@@ -1,4 +1,4 @@
-# Tamplate beamer do Insper
+# Tamplate beamer da FIAP
 
 Este template foi feito para ser utilizado com o pandoc para conversão de
 documentos md em apresentacões pdf.
@@ -25,7 +25,7 @@ $sudo texhash
 Utilize o exemplo.md como base, para gerar o pdf utilize:
 
 ```
-$pandoc -t beamer apresentacao.md -o  apresentacao.pdf
+$pandoc -t beamer apresentacao.md -o  apresentacao.pdf --defaults defaults.yaml
 ```
 
 
